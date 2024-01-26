@@ -1,0 +1,22 @@
+First Project
+
+Make a 2D game.  It must use Sprites or 2D Skeletal animation.  It should be done in Unity and we will submit it through git repositories that I setup.
+
+
+
+Take a random card with one of three genres
+
+ -Platformer,  
+ -Top Down
+ -Turn based
+
+Take 1 Random modifiers
+
+ - No Guns
+ - No Moving Enemies
+ - Single Screen
+ - Monochromatic
+ - Cards
+ - Physics (Think Angry birds)
+ 
+ 
