@@ -6,6 +6,7 @@ public class Meteor : iDamageable
 {
     // Start is called before the first frame update
     private float StartTime;
+    [SerializeField]
     private float DeathTime = 6f;
     public float InitialForce=100f;
     void Start()
@@ -21,7 +22,7 @@ public class Meteor : iDamageable
         if(Time.realtimeSinceStartup - StartTime > DeathTime)
         {
             onDestroyTime();
-        }    
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
