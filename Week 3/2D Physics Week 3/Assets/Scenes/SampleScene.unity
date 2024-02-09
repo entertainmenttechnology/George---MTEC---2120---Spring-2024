@@ -1842,8 +1842,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftPaddle: {fileID: 1132774921}
-  RightPaddle: {fileID: 0}
-  Ball: {fileID: 0}
+  RightPaddle: {fileID: 1803898041}
+  Ball: {fileID: 145260554}
   ForceAmt: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
