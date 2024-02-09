@@ -33,7 +33,7 @@ public class InputDetector : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
         {
-            LeftPaddle.GetComponent<Rigidbody2D>().AddForceAtPosition(Vector3.up * ForceAmt, transform.position + new Vector3(.5f, 0f, 0f), ForceMode2D.Force);
+            
         }
         if(Input.GetKeyDown(KeyCode.D))
         {
