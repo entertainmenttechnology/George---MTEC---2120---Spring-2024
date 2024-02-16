@@ -1,0 +1,16 @@
+For assignment 2 we will be doing 3D work 
+
+We will be importing/texturing 3D models, using 3D Cameras and spaces and building in prescribed Genres.  
+
+Everyone has recieved a random camera position/genre/theme to work within.  
+
+The Setups are as such:
+
+Nicholas: Fixed Camera, Puzzle, Abstract
+Kikey: First Person, Platformer, Summer
+Osakpalur:Fixed Camera, Action, Summer
+Tenjing:Third Person, Puzzle, Winter
+Steven: Fixed, Puzzle, Winter
+Erik:Fixed, Platformer, Abstract
+
+The presentations will be on March 8th.  Please re-use the previous repository (You can make a new folder inside, but make sure to copy the .gitignore into the project root folder.)
