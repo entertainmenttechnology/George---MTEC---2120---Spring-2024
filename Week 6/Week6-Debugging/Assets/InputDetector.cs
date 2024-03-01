@@ -16,31 +16,26 @@ public class InputDetector : MonoBehaviour
     private bool BallIsReset;
     void Start()
     {
-        
+        DoBallReset();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && BallIsReset)
         {
-            if(BallIsReset)
-            {
-                Ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f, 1f) * BallShotForce, ForceMode2D.Force);  
-            }
-            else
-            {
-                SetBallGravity(1f);
-            }
+            BallIsReset = false;
+            Ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f, 1f) * BallShotForce, ForceMode2D.Force);
+            SetBallGravity(1f);
         }
 
         if(Input.GetKey(KeyCode.A))
         {
-            LeftPaddle.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(0f, ForceAmt), new Vector2(1f, 0f), ForceMode2D.Impulse);
+            LeftPaddle.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(0f, ForceAmt), transform.position + new Vector3(1f, 0f, 0f), ForceMode2D.Impulse);
         }
-        if(Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKey(KeyCode.D))
         {
-            RightPaddle.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(0f, ForceAmt), new Vector2(1f, 0f), ForceMode2D.Impulse);
+            RightPaddle.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(0f, ForceAmt), transform.position - new Vector3(1f, 0f, 0f), ForceMode2D.Impulse);
         }
     }
 
@@ -52,6 +47,7 @@ public class InputDetector : MonoBehaviour
 
     public void SetBallGravity(float newGravity)
     {
+        Debug.Log(string.Format("Ball Gravity is {0}", newGravity));
         Ball.GetComponent<Rigidbody2D>().gravityScale = newGravity;
     }
 }

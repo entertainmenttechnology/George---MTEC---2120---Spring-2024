@@ -193,7 +193,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 24512995}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: df0905e7d8d46114b9ca93bfc4679f41, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -474,7 +474,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!58 &145260556
 CircleCollider2D:
@@ -1088,7 +1088,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 950413337}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: df0905e7d8d46114b9ca93bfc4679f41, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1282,7 +1282,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &1132774926
 SpriteRenderer:
@@ -1776,7 +1776,7 @@ Transform:
   m_GameObject: {fileID: 1803898041}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.64, y: -3.736, z: 0}
+  m_LocalPosition: {x: 1.64, y: -3.77, z: 0}
   m_LocalScale: {x: -0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1798,7 +1798,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1.1, y: 0}
-  m_ConnectedAnchor: {x: 2.19, y: -3.736}
+  m_ConnectedAnchor: {x: 2.19, y: -3.77}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1902,7 +1902,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &1803898046
 SpriteRenderer:
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   RightPaddle: {fileID: 1803898041}
   Ball: {fileID: 145260554}
   ForceAmt: 4
-  BallShotForce: 1
+  BallShotForce: 150
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
