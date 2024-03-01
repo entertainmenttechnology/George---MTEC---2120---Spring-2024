@@ -20,6 +20,6 @@ public class BallReset : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         other.transform.position = BallResetPosition.transform.position;
         other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        GameObject.FindObjectOfType<InputDetector>().DoBallReset();
+        GameObject.FindObjectsOfType<InputDetector>()[1].DoBallReset();
     }
 }
